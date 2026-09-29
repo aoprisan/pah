@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>În memoria lui Patrick Andre de Hillerin</title>
-<meta name="description" content="Pagină de comemorare pentru Patrick Andre de Hillerin.">
+<title>În memoria lui Patrick André de Hillerin</title>
+<meta name="description" content="Pagină de comemorare pentru Patrick André de Hillerin.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet">
@@ -181,6 +181,46 @@
   }
   button:hover { border-color: var(--accent); color: var(--accent); }
   button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .role {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1.2rem;
+    margin: .25rem 0 0;
+  }
+  .timeline {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0 0 0 1.25rem;
+    border-left: 1px solid var(--line);
+  }
+  .timeline li { position: relative; margin: 0 0 1.4rem; }
+  .timeline li:last-child { margin-bottom: 0; }
+  .timeline li::before {
+    content: ""; position: absolute; left: calc(-1.25rem - 4px); top: .55rem;
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+  }
+  .timeline .year {
+    display: block;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.25rem;
+    color: var(--accent);
+    line-height: 1.3;
+  }
+  .timeline p { margin: .2rem 0 0; }
+  .program { margin: 0; }
+  .program dt {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.2rem;
+    color: var(--accent);
+  }
+  .program dd { margin: 0 0 1rem; }
+  .program dd:last-child { margin-bottom: 0; }
+  .sources { font-size: .85rem; color: var(--muted); text-align: left; }
+  .sources ul { margin: .5rem 0 0; padding-left: 1.2rem; }
+  .sources a { color: var(--muted); }
+  .sources a:hover { color: var(--accent); }
   footer {
     color: var(--muted);
     font-size: .85rem;
@@ -195,14 +235,14 @@
 
   <!-- Pentru a adăuga o fotografie: salvați imaginea ca „patrick.jpg” în același folder. -->
   <div class="portrait">
-    <img src="patrick.jpg" alt="Patrick Andre de Hillerin"
+    <img src="patrick.jpg" alt="Patrick André de Hillerin"
          onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'initials',textContent:'PH'}))">
   </div>
 
   <p class="kicker">În memoria lui</p>
-  <h1>Patrick Andre de&nbsp;Hillerin</h1>
-  <!-- Adăugați anul nașterii înainte de „†”, de ex.: „AAAA – † 28 septembrie 2026” -->
-  <p class="dates">† 28 septembrie 2026</p>
+  <h1>Patrick André de&nbsp;Hillerin</h1>
+  <p class="dates">11 noiembrie 1974 – † 28 septembrie 2026</p>
+  <p class="role">Jurnalist · Cofondator al „Academiei Cațavencu”</p>
 
   <hr class="rule">
 
@@ -218,10 +258,60 @@
     <h2 id="despre">Cu dragoste</h2>
     <div class="card">
       <p>Cu inimile îndurerate, anunțăm trecerea la cele veșnice a iubitului nostru
-      Patrick Andre de Hillerin, care ne-a părăsit pe 28 septembrie 2026.</p>
+      Patrick André de Hillerin, care ne-a părăsit luni, 28 septembrie 2026, la Jurilovca, județul Tulcea.</p>
       <p>Rămâne viu în amintirea familiei, a prietenilor și a tuturor celor
       care au avut bucuria să-l cunoască.</p>
       <p>Dumnezeu să-l odihnească în pace.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section aria-labelledby="viata">
+    <h2 id="viata">Viața și opera</h2>
+    <div class="card">
+      <p>Patrick André de Hillerin s-a născut pe 11 noiembrie 1974. A intrat în presă
+      la doar 15 ani și a scris, timp de peste trei decenii, ca reporter, jurnalist de
+      investigație, autor de interviuri, umorist și editorialist, fiind considerat
+      unul dintre cei mai incisivi jurnaliști români.</p>
+    </div>
+    <ol class="timeline">
+      <li><span class="year">1990</span>
+        <p>Debutează în presă la 15 ani, în timpul manifestațiilor din Piața Universității,
+        scriind pentru revista Ligii Studenților. Se alătură apoi săptămânalului „Cațavencu”.</p></li>
+      <li><span class="year">1991</span>
+        <p>La 16 ani devine cel mai tânăr dintre membrii fondatori ai Instituției Culturale
+        „Academia Cațavencu”. Mai târziu este și printre fondatorii revistei „Cațavencii”,
+        unde conduce la un moment dat redacția.</p></li>
+      <li><span class="year">De-a lungul anilor</span>
+        <p>Publică în „Săptămâna Financiară”, „Dilema” și în presa din Tulcea, și scrie
+        pentru emisiuni de televiziune precum „Starea Nației” și „România 9”.</p></li>
+      <li><span class="year">2015</span>
+        <p>Publică volumul <em>Dumnezeu are legitimație de presă</em>, o selecție de texte
+        apărute în „Academia Cațavencu”, „Săptămâna Financiară” și „Cațavencii”.</p></li>
+      <li><span class="year">2018</span>
+        <p>Din 17 octombrie devine editorialist la „Libertatea”, unde publică de mai multe ori
+        pe săptămână, continuând colaborarea cu „Cațavencii”.</p></li>
+      <li><span class="year">2025</span>
+        <p>Din august scrie editoriale și analize pentru „Gândul”, colaborare pe care
+        o continuă până în ultimele zile.</p></li>
+    </ol>
+  </section>
+
+  <hr class="rule">
+
+  <section aria-labelledby="funeralii">
+    <h2 id="funeralii">Ultimul drum</h2>
+    <div class="card">
+      <dl class="program">
+        <dt>29 septembrie</dt>
+        <dd>Depus la capela din Jurilovca, unde rămâne până în dimineața zilei de 30 septembrie.</dd>
+        <dt>30 septembrie</dt>
+        <dd>În jurul prânzului este adus la București și depus la capela Cimitirului Bellu Catolic,
+        unde cei care doresc îi pot aduce un ultim omagiu.</dd>
+        <dt>Joi, 1 octombrie, ora 12:00</dt>
+        <dd>Înmormântarea, la Cimitirul Bellu Catolic din București, alături de strămoșii săi.</dd>
+      </dl>
     </div>
   </section>
 
@@ -252,6 +342,19 @@
       <button type="button" id="light">Aprinde o lumânare</button>
       <p class="note" id="candle-msg" aria-live="polite"></p>
     </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="sources" aria-label="Surse">
+    Surse:
+    <ul>
+      <li><a href="https://www.gandul.ro/actualitate/jurnalistul-patrick-andre-de-hillerin-colaborator-si-editorialist-gandul-s-a-stins-din-viata-in-urma-cu-putin-timp-21019639">Gândul</a></li>
+      <li><a href="https://adevarul.ro/stiri-interne/evenimente/a-murit-jurnalistul-patrick-andre-de-hillerin-2560381.html">Adevărul</a></li>
+      <li><a href="https://www.radioromaniacultural.ro/sectiuni-articole/jurnalistul-patrick-andr-de-hillerin-a-murit-la-52-de-ani-id55276.html">Radio România Cultural</a></li>
+      <li><a href="https://oficiuldestiri.ro/cine-este-patrick-andre-de-hillerin-jurnalistul-care-a-murit-la-doar-52-de-ani-o-cariera-de-peste-trei-decenii-in-presa-romaneasca-scria-inca-de-la-15-ani">Oficiul de Știri</a></li>
+      <li><a href="https://www.dcnews.ro/patrick-andre-de-hillerin-va-fi-inmormantat-alaturi-de-stramosii-sai-in-bucuresti-programul-funeraliilor_1085874.html">DCNews – programul funeraliilor</a></li>
+    </ul>
   </section>
 </main>
 
